@@ -1,7 +1,7 @@
 # Multi-Agent SEO Blog Generator (Backend)
 
 ## Overview
-This project is a backend system for generating a 2000-word SEO-optimized blog post on HR trends for 2025. It uses a multi-agent architecture to research, plan, generate, optimize, and review the blog content, saving the final output in TXT, HTML, and PDF formats. The system leverages free APIs (Groq and Serper) to ensure cost-effectiveness while delivering high-quality results.
+This project is a backend system for generating a 2000-word SEO-optimized blog post on HR trends for 2025. It uses a multi-agent architecture to research, plan, generate, optimize, and review the blog content, saving the final output in TXT, HTML, md and PDF formats. The system leverages free APIs (Groq and Serper) to ensure cost-effectiveness while delivering high-quality results.
 
 ## Approach Evolution
 Initially, I used AWS services like Lambda and Comprehend for content generation and optimization, leveraging their scalability and NLP capabilities. However, high costs from API calls and compute time, plus the complexity of managing AWS resources, made this approach unsustainable. I switched to free Groq and Serper APIs, which met the project’s needs—Groq for efficient content generation and optimization, and Serper for web scraping "HR trends 2025" data. This pivot eliminated costs, maintained quality, and simplified development, ensuring the project’s sustainability for submission.
@@ -27,7 +27,7 @@ Initially, I used AWS services like Lambda and Comprehend for content generation
   - **Meta Description**: 150-160 chars for search snippets.
   - **Headings**: H1, H2, H3 for structure and SEO.
   - **Engagement**: Adds examples and stats for better dwell time.
-  
+
 ## Project Structure
 
 The project is organized into directories for agents, intermediate outputs, final outputs, and root-level files. Below is a clear breakdown:
