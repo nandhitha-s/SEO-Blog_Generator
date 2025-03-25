@@ -19,26 +19,27 @@ Initially, I explored using AWS services (e.g., AWS Lambda, Amazon Comprehend) f
 
 ## Project Structure
 SEO-Blog_Generator/
-  agents/
-    content_generation_agent.py  # Generates initial blog draft
-    optimizer_agent.py          # Optimizes for SEO and expands content
-    planning_agent.py           # Creates blog outline
-    research_agent.py           # Researches HR trends via Serper
-    review_agent.py             # Polishes final blog to 2000 words
-  intermediate/
-    blog_post.txt               # Initial blog draft
-    optimized_blog_post.txt     # SEO-optimized draft
-    outline.txt                 # Blog outline
-    research_output.txt         # Research topic and key points
-  output/
-    final_blog_post.html        # Final blog in HTML
-    final_blog_post.pdf         # Final blog in PDF
-    final_blog_post.txt         # Final blog in TXT
-  .env                          # API keys (not in repo)
-  .gitignore                    # Excludes venv/, outputs, etc.
-  main.py                       # Orchestrates the pipeline
-  requirements.txt              # Dependencies
-  README.md                     # Project documentation
+├── agents/
+│   ├── content_generation_agent.py
+│   ├── optimizer_agent.py
+│   ├── planning_agent.py
+│   ├── research_agent.py
+│   ├── review_agent.py
+├── intermediate/  # Ignored by Git
+│   ├── blog_post.txt
+│   ├── optimized_blog_post.txt
+│   ├── outline.txt
+│   ├── research_output.txt
+├── output/  # Ignored by Git
+│   ├── final_blog_post.html
+│   ├── final_blog_post.pdf
+│   ├── final_blog_post.txt
+├── venv/  # Ignored by Git
+├── .env  # Ignored by Git
+├── .gitignore
+├── main.py
+├── requirements.txt
+├── README.md
 
 ## Dependencies
 Listed in requirements.txt:
