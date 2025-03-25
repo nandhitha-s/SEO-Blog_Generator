@@ -78,6 +78,10 @@ def generate_blog():
     final_blog, word_count, keyword_counts, density, heading_count = review_agent.review_blog(optimized_file)
     
     # Save final outputs in multiple formats
+    # Markdown
+    md_file = os.path.join(output_dir, "final_blog_post.md")
+    with open(md_file, "w", encoding="utf-8") as f:
+        f.write(final_blog)
     # TXT
     txt_file = os.path.join(output_dir, "final_blog_post.txt")
     with open(txt_file, "w", encoding="utf-8") as f:
@@ -91,7 +95,7 @@ def generate_blog():
     pdf_file = os.path.join(output_dir, "final_blog_post.pdf")
     save_as_pdf(final_blog, pdf_file)
 
-    print(f"Final blog post saved to {txt_file}, {html_file}, and {pdf_file}")
+    print(f"Final blog post saved to {md_file}, {txt_file}, {html_file}, and {pdf_file}")
     print(f"Word Count: {word_count}")
     print(f"Keyword Counts: {keyword_counts}")
     print(f"Keyword Density: {density}")
