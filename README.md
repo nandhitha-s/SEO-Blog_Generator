@@ -20,31 +20,31 @@ Initially, I explored using AWS services (e.g., AWS Lambda, Amazon Comprehend) f
 ## Project Structure
 
 The project is organized into directories for agents, intermediate outputs, final outputs, and root-level files. Below is a clear breakdown:
-
-| Directory/File         | Description                                      |
-|------------------------|--------------------------------------------------|
-| **agents/**            | Contains all agent scripts for the pipeline      |
-| agents/content_generation_agent.py | Generates the initial blog draft     |
-| agents/optimizer_agent.py | Optimizes the blog for SEO and expands content |
-| agents/planning_agent.py | Creates the blog outline                |
-| agents/research_agent.py | Researches HR trends using Serper API   |
-| agents/review_agent.py | Polishes the final blog to 2000 words     |
-| **intermediate/**      | Stores intermediate outputs (ignored by Git)     |
-| intermediate/blog_post.txt | Initial blog draft                     |
-| intermediate/optimized_blog_post.txt | SEO-optimized draft          |
-| intermediate/outline.txt | Blog structure with headings             |
-| intermediate/research_output.txt | Research topic and key points    |
-| **output/**            | Stores final blog outputs (ignored by Git)       |
-| output/final_blog_post.html | Final blog in HTML format             |
-| output/final_blog_post.pdf | Final blog in PDF format               |
-| output/final_blog_post.txt | Final 2000-word blog in Markdown       |
-| **venv/**              | Virtual environment (ignored by Git)             |
-| **.env**               | API keys (ignored by Git)                        |
-| **.gitignore**         | Excludes venv/, outputs, etc. from Git           |
-| **main.py**            | Orchestrates the entire pipeline                 |
-| **requirements.txt**   | Lists project dependencies                       |
-| **README.md**          | Project documentation                            |
-
+```
+## Project Structure
+SEO-Blog_Generator/
+├── agents/
+│   ├── content_generation_agent.py
+│   ├── optimizer_agent.py
+│   ├── planning_agent.py
+│   ├── research_agent.py
+│   ├── review_agent.py
+├── intermediate/  # Ignored by Git
+│   ├── blog_post.txt
+│   ├── optimized_blog_post.txt
+│   ├── outline.txt
+│   ├── research_output.txt
+├── output/  # Ignored by Git
+│   ├── final_blog_post.html
+│   ├── final_blog_post.pdf
+│   ├── final_blog_post.txt
+├── venv/  # Ignored by Git
+├── .env  # Ignored by Git
+├── .gitignore
+├── main.py
+├── requirements.txt
+├── README.md
+```
 **Note**: Directories and files marked as "ignored by Git" (e.g., `venv/`, `intermediate/`, `output/`, `.env`) are excluded via `.gitignore` to keep the repository clean.
 
 ## Dependencies
