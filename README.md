@@ -115,7 +115,6 @@ Listed in requirements.txt:
 - Heading Recognition: Initial blog used bold (** ) headings, causing detection issues. Updated agents to convert to Markdown (# ) format.
 
 ## Future Improvements
-- Frontend Integration: Add a Flask frontend to trigger generation and display outputs via a web interface.
 - Advanced SEO: Incorporate meta tags, alt text for images (if added), and backlink suggestions.
 - Content Variety: Support multiple topics beyond HR trends by making the research query configurable.
 
